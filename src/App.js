@@ -9,7 +9,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header branding="Sagar" />
+        <Header branding="Contact Manager" />
         {Para}
         <Contact name="John Doe" email="jdoe@gmail.com" />
         <Contact name="Jim Bim" email="jim@yahoo.com" />
