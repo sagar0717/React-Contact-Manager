@@ -25,13 +25,21 @@ class Contacts extends Component {
       }
     ]
   };
+  deleteContact = () => {
+    console.log("Delete Clicked");
+  };
+
   render() {
     const { contacts } = this.state;
 
     return (
       <React.Fragment>
         {contacts.map(contact => (
-          <Contact key={contact.id} contact={contact} />
+          <Contact
+            key={contact.id}
+            contact={contact}
+            deleteClickHandler={this.deleteContact}
+          />
         ))}
       </React.Fragment>
     );
