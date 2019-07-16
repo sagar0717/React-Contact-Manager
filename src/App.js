@@ -8,6 +8,8 @@ import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+import { Provider } from "./context";
+
 library.add(fas, faPlus, faSortDown);
 
 class App extends Component {
@@ -16,12 +18,14 @@ class App extends Component {
     var Para = <p>This is new SAGAR</p>;
 
     return (
-      <div className="App">
-        <Header branding="Contact Manager" />
-        <div className="container">
-          <Contacts />
+      <Provider>
+        <div className="App">
+          <Header branding="Contact Manager" />
+          <div className="container">
+            <Contacts />
+          </div>
         </div>
-      </div>
+      </Provider>
     );
   }
 }
