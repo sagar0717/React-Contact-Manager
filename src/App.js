@@ -15,8 +15,8 @@ library.add(fas, faPlus, faSortDown);
 
 class App extends Component {
   render() {
-    const name = "Larry";
-    var Para = <p>This is new SAGAR</p>;
+    // const name = "Larry";
+    // var Para = <p>This is new SAGAR</p>;
 
     return (
       <Provider>

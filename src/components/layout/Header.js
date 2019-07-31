@@ -23,10 +23,10 @@ const Header = props => {
   );
 };
 
-const headerStyle = {
-  color: "grey",
-  fontSize: "50px"
-};
+// const headerStyle = {
+//   color: "grey",
+//   fontSize: "50px"
+// };
 Header.defaultProps = {
   branding: "MY APP"
 };
