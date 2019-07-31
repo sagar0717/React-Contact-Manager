@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Contact from "./Contact";
 import PropTypes from "prop-types";
 
-import { Consumer } from "../context";
+import { Consumer } from "../../context";
 
 class Contacts extends Component {
   render() {
