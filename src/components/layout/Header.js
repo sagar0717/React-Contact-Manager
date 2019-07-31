@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = props => {
   const { branding } = props;
@@ -12,9 +14,25 @@ const Header = props => {
         <div>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <Link to="/" className="nav-link">
+                <FontAwesomeIcon icon="home" style={{ cursor: "pointer" }} />{" "}
                 Home
-              </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact/add" className="nav-link">
+                <FontAwesomeIcon icon="plus" style={{ cursor: "pointer" }} />{" "}
+                Add
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">
+                <FontAwesomeIcon
+                  icon="question"
+                  style={{ cursor: "pointer" }}
+                />{" "}
+                About
+              </Link>
             </li>
           </ul>
         </div>
